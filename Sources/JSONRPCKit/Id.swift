@@ -37,6 +37,14 @@ extension Id {
 }
 
 extension Id: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        switch self {
+        case .number(let number):
+            hasher.combine(number)
+        case .string(let string):
+            hasher.combine(string)
+        }
+    }
     
     public var hashValue: Int {
         switch self {

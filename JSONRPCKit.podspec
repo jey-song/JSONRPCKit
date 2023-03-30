@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = "JSONRPCKit"
-  s.version  = "3.0.0"
+  s.version  = "3.0.1"
   s.summary  = "JSONRPCKit is a JSON-RPC 2.0 library purely written in Swift."
   s.homepage = "https://github.com/bricklife/JSONRPCKit"
 
@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
       "Shinichiro Oba" => "ooba@bricklife.com"
   }
 
-  s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.9"
-  s.watchos.deployment_target = "2.0"
-  s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "11.0"
+  s.osx.deployment_target = "12.0"
+  s.watchos.deployment_target = "3.0"
+  s.tvos.deployment_target = "11.0"
 
   s.source_files = "Sources/JSONRPCKit/*.{swift,h,m}"
   s.source = {
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     LICENSE
   }
-  s.dependency "Result", "~> 3.2.0"
+  s.dependency "Result", "~> 5.0"
 
 end
